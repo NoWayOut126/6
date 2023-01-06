@@ -1,0 +1,27 @@
+Задание #1
+from collections import Counter
+def non_uniq(numbers):
+counter = Counter(numbers)
+return [n for n in numbers if counter[n] > 1]
+Задание #2
+list_x, list_y, list_z, n = [0, 1], [0, 1], [0, 1], 2
+result = [[x, y, z] \
+for x in list_x \
+for y in list_y \
+for z in list_z \
+if x + y + z != n]
+print(result)
+Задание #3
+myList = [input()]
+with open('file1.txt', 'w') as file1:
+f1 = file1.writelines(myList)
+newList = list(map(int, open('file1.txt', 'r').read().split()))
+print(newList)
+myInt = 2
+num = [x / myInt for x in newList]
+print(num[i])
+for i in range(num):
+if i % 4 == 2:
+n = num[i]
+i+1
+print(n)
